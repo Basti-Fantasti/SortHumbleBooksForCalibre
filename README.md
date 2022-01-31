@@ -20,8 +20,8 @@ all the files inside the directory will be sorted like that:
 
 |Original File | Moved File |
 |--- |--- |
-| c:\temp\book1.pdf | c:\temp1\book1\book1.pdf |
-| c:\temp\book1.epub | c:\temp1\book1\book1.epub |
-| c:\temp\book2.pdf | c:\temp1\book2\book2.pdf |
-| c:\temp\book2.epub | c:\temp1\book2\book2.epub |
+| c:\temp\book1.pdf | c:\temp\book1\book1.pdf |
+| c:\temp\book1.epub | c:\temp\book1\book1.epub |
+| c:\temp\book2.pdf | c:\temp\book2\book2.pdf |
+| c:\temp\book2.epub | c:\temp\book2\book2.epub |
 
