@@ -1,25 +1,17 @@
-import argparse
 import os
-
+import sys
 from os import walk
 
-# Instantiate the parser
-parser = argparse.ArgumentParser(description='Move Downloaded Epub, PDF, etc... files to a sub folder for each book for simple Calibre import')
 
-# Required positional argument
-parser.add_argument('input_dir', type=str,
-                    help='The directory to process')
-
-args = parser.parse_args()
-
-procdir = args.input_dir
+procdir = sys.argv[1]
 print(f'Processing {procdir}')
 
 f = []
 for (dirpath, dirnames, filenames) in walk(procdir):
     f.extend(filenames)
     break
-
+print(f'found these files: {f}')
+print('processing...')
 for book in f:
     origin = os.path.join(procdir, book)
     fnam = os.path.splitext(book)[0]
